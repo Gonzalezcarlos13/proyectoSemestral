@@ -1,0 +1,133 @@
+{% extends 'app/base2.html' %}
+{% load static %}
+{% block contenido %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2 bg-success" style="min-height: 65vh;">
+      <ul class="nav nav-pills flex-column mt-1">
+        <li class="nav-item mt-1">
+          <a class="nav-link" href="index2"><i class="fa-solid fa-house"></i> Inicio</a>
+        </li>
+        <li class="nav-item mt-1">
+
+          <div class="dropdown">
+            <button type="button" class="btn btn-success dropdown-toggle fa-solid fa-cart-shopping active"
+              data-bs-toggle="dropdown">
+              Compra
+            </button>
+            <ul class="dropdown-menu bg-success">
+              <li><a class="dropdown-item" href="herramientas">Herramientas</a></li>
+              <li><a class="dropdown-item" href="Sustrato">Sustratos</a></li>
+              <li><a class="dropdown-item" href="Semillas">Semillas</a></li>
+              <li><a href="carritoC.html"></a><button class="btn btn-success" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#demo">
+                  Carrito de Compras
+                </button></a></li>
+                <li><a class="dropdown-item" href="seguimiento">Seguimiento de compra</a></li>
+                <li><a class="dropdown-item" href="historial">Historial de compra</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item mt-1">
+          <div class="dropdown">
+            <button type="button" class="btn btn-success dropdown-toggle fa-solid fa-cash-register "
+              data-bs-toggle="dropdown">
+              Venta
+            </button>
+            <ul class="dropdown-menu bg-success">
+              <li><a class="dropdown-item" href="nProducto">Vender producto</a></li>
+              <li><a class="dropdown-item" href="articulosD">Actualizar stock</a></li>
+              <li><a class="dropdown-item" href="articulosD">Cambio de precios</a></li>
+              <li><a class="dropdown-item" href="articulosD">Articulos Disponibles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item mt-1">
+          <a class="nav-link" href="index"><i class="fa-solid fa-user"></i> Cerrar Sesion</a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="col-sm-10 ">
+
+      <div class="row">
+
+        <div class="col-sm-12 bg-warning">
+          <div class="d-flex justify-content arount mt-3 mb-1  ">
+            <div class="p-2 bg-success flex-grow-1">
+              
+              <h3 class="titulos bg-writh">Envio confirmado:</h3>
+              <h5 class="titulos">Id de compra: 88</h5>
+              
+            </div>
+
+            </div>
+            <hr>
+          </div>
+          
+        </div>
+
+      <div class="row">
+
+        <div class="col-sm-12 bg-warning ">
+          <div class="d-flex justify-content-around mt-1 mb-1 ">
+            <div class="p-2 bg-success flex-grow-1">
+              <h5 class="titulos">Seguimiento de compra:</h5>
+              <ul class="list-group">
+                <li class="list-group-item titulos">Articulo: Tijeras de podar | Precio: $3.990 | Cantidad: 1 </li>
+
+              </ul>
+            </div>
+
+            
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-12 bg-warning ">
+          <div class="d-flex justify-content-around mt-1 mb-1 ">
+            <div class="p-2 bg-success flex-grow-1">
+              
+              <h5 class="titulos">Progreso de envio:</h5>
+              <div class="progress">
+                <div class="progress-bar" style="width:60%">60%</div>
+              </div>
+            </div>
+
+            </div>
+            <hr>
+          </div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-sm-12 bg-warning ">
+            <div class="d-flex justify-content-around mt-1 mb-1 ">
+              <div class="p-2 bg-success flex-grow-1">
+                
+                <h5 class="titulos">Etapa de envio:</h5>
+                <ul class="list-group">
+                  <li class="list-group-item ">07:33 | Envio desde sucursal a centro de despacho</li>
+                  <li class="list-group-item">09:00 | Recepcionado desde centro de despacho</li>
+                  <li class="list-group-item active">11:30 | Envio desde centro de despacho en camino al consumidor</li>
+                  <li class="list-group-item ">13:33 | En camino</li>
+                  <li class="list-group-item "> | Recepcionado</li>
+                </ul>
+              </div>
+
+              </div>
+            </div>
+            
+          </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  {% endblock %}

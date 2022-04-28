@@ -1,0 +1,96 @@
+{% extends 'app/base2.html' %}
+{% load static %}
+{% block contenido %}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 bg-success" style="min-height: 65vh;">
+            <ul class="nav nav-pills flex-column mt-1">
+                <li class="nav-item mt-1">
+                    <a class="nav-link" href="index2"><i class="fa-solid fa-house"></i> Inicio</a>
+                </li>
+                <li class="nav-item mt-1">
+
+                    <div class="dropdown">
+                        <button type="button"
+                            class="btn btn-success dropdown-toggle fa-solid fa-cart-shopping active"
+                            data-bs-toggle="dropdown">
+                            Compra
+                        </button>
+                        <ul class="dropdown-menu bg-success">
+                            <li><a class="dropdown-item" href="herramientas">Herramientas</a></li>
+                            <li><a class="dropdown-item" href="Sustrato">Sustratos</a></li>
+                            <li><a class="dropdown-item" href="Semillas">Semillas</a></li>
+                            <li><button class="btn btn-success" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#demo">
+                                    Carrito de Compras
+                                </button></li>
+                            <li><a class="dropdown-item" href="seguimiento">Seguimiento de compra</a></li>
+                            <li><a class="dropdown-item" href="historial">Historial de compra</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mt-1">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-success dropdown-toggle fa-solid fa-cash-register"
+                            data-bs-toggle="dropdown">
+                            Venta
+                        </button>
+                        <ul class="dropdown-menu bg-success">
+                            <li><a class="dropdown-item" href="nProducto">Vender producto</a></li>
+                            <li><a class="dropdown-item" href="articulosD">Actualizar stock</a></li>
+                            <li><a class="dropdown-item" href="articulosD">Cambio de precios</a></li>
+                            <li><a class="dropdown-item" href="articulosD.">Articulos Disponibles</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mt-1">
+                    <a class="nav-link" href="index"><i class="fa-solid fa-user"></i> Cerrar Sesion</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-sm-10 bg-warning">
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10 ">
+
+                    <div>
+
+                        <div class="col-sm-12 d-flex justify-content-around">
+
+
+
+                            <div class="card mt-4 bg-warning" style="width:260px">
+                                <img class="card-img-top" src="{% static 'app/img/planta pro.jpg' %}" alt="Card image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Suscripcion</h5>
+                                    <p>
+                                        <dt>Precio:</dt> $2.990
+                                    </p>
+                                    <p>
+                                        <dt>Descripcion:</dt> Obtendra un beneficio con un descuento en algunos productos y el dinero de su suscripción estara destinada a una beneficencia.
+                                    </p>
+                                    
+                                    <a href="confirmacionS" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>
+{% endblock %}
